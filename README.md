@@ -1,2 +1,0 @@
-# AppRickAndMorty
-Consumiendo api

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Rick And Morty</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="glass-content">
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let c of characters" size="12" size-lg="6" sisze-md="6" size-sm="6" >
+          <ion-grid> 
+          <ion-card>
+            <ion-row>
+              <ion-col class="ion-padding" size="12" size-lg="4" size-md="4" size-sm="4" >
+                <ion-avatar>
+                  <img [src]="c.image" />
+                </ion-avatar>
+              </ion-col>
+              <ion-col class="ion-padding" size="12" size-lg="8" size-md="8" size-sm="8" >
+                <div class="name">{{c.name}}</div>
+                <p>Origen : <br> <strong>{{c.origin.name}}</strong></p>
+                <p>Visto en : <br> <strong>{{c.location.name}}</strong></p>
+              </ion-col>
+            </ion-row>
+            </ion-card>
+          </ion-grid>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
